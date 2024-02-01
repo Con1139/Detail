@@ -1,0 +1,1294 @@
+<doctype html>
+<html>
+
+<head>
+<title> Crew Detail</title>
+
+<!--<meta http-equiv="refresh" content="5;URL='Badge.htm'">--!>
+
+<div id="blueRectangle"></div>
+<div id="circle"></div>
+<img id = "Crest" src="C:\Users\Vikki\Desktop\Detail\Images\crestpainnet.gif" alt Crest image>
+<div id= "title">
+         Appliance Availability
+      </div>
+
+   <meta charset="UTF-8">
+    <title>Display current date and time</title>
+
+<textarea id="freeform" name="freeform" rows="4" cols="50">
+
+</textarea>
+
+<style>
+
+#datetime {
+Position: absolute;
+left: 1300px;
+top: 33px;
+z-index: 1;
+text-align: centre;
+    	background: #002060;
+  	font-size: 25px;
+color: white;;
+    	height: 100px;
+    	width: 200px;
+}
+
+#title {
+Position: absolute;
+left: 300px;
+top: 33px;
+z-index: 1;
+text-align: centre;
+    	background: #002060;
+  	font-size: 55px;
+color: white;;
+    	height: 100px;
+    	width: 500px;
+}
+
+
+#crest {
+    position: relative;
+    top: -247px;
+    left: 105px;
+    width: 140px;
+    height: 140px;
+    z-index:2 ;
+ 
+animation: rotateY 14s 1 alternate, scale 7s 1 alternate;  
+animation-delay: 7s;
+animation-duration: 7s;
+}
+
+.spinner {
+    position: relative;
+    top: 300px;
+  animation: spin 6s 1 linear;
+animation-delay: 7s;
+animation-duration: 6s;
+}
+
+@keyframes rotateY {
+  to { transform: rotateY(360deg);}
+}
+
+
+@keyframes spin { 
+    100% { 
+        transform: rotate(360deg);
+    } 
+}
+
+@keyframes scale {
+
+    100% {
+         transform: scaleX(3) scaleY(3)
+left: 600px; top: 100px;
+    	}
+}
+
+
+
+#blueRectangle {
+Position: relative;
+left: opx;
+top: 25px;
+z-index: 1;
+display: inline- block;
+border:0px solid black;
+margin: 0px;
+text-align: centre;
+
+    	background: #002060;
+    	height: 100px;
+    	width: 100%;
+
+
+	
+}
+
+#circle {
+Position: relative;
+left: 100px;
+top: -95px;
+z-index: 2;
+    background: White;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+
+}
+
+
+/* Safari syntax */
+:-webkit-full-screen {
+  background-color: White;
+}
+
+/* IE11 */
+:-ms-fullscreen {
+  background-color: White;
+}
+
+/* Standard syntax */
+:fullscreen {
+  background-color: white;
+}
+
+/* Style the button */
+button {
+
+  Position: relative;
+left: 1000px;
+top: 500px;
+z-index: 2;
+display: inline- block;
+border:0px solid black;
+margin: 0px;
+text-align: centre;
+
+    	background: #24ab77;
+    	height: 40px;
+    	width: 250px;
+	padding: 11px;
+  	font-size: 18px;
+}
+
+#Personnel{
+  
+	padding: 2px;
+  	font-size: 18px;
+
+    width: 300px;
+    height: 35px;
+
+}
+
+#Role{
+padding: 2px;
+background: #002060;
+  	font-size: 18px;
+color: white;
+    width: 300px;
+    height: 35px;
+}
+
+table, th, td {
+border-collapse: collapse;
+border-spacing: 0px;
+  border: 0px solid;
+Position: relative;
+left: 0px;
+top: -150px;
+width: 100%;
+height: 10;
+
+}
+
+/*700px width for example*/
+
+#sel option {
+    width: 700px; 
+    height: 60px; 
+}
+
+</style>
+
+</head>
+
+
+<body>
+ <span id="datetime"></span>
+
+    <script>
+      // create a function to update the date and time
+      function updateDateTime() {
+        // create a new `Date` object
+        const now = new Date();
+
+        // get the current date and time as a string
+        const currentDateTime = now.toLocaleString();
+
+        // update the `textContent` property of the `span` element with the `id` of `datetime`
+        document.querySelector('#datetime').textContent = currentDateTime;
+      }
+
+      // call the `updateDateTime` function every second
+      setInterval(updateDateTime, 1000);
+    </script>
+
+<!--document.getElementById--!>
+<!--fullscreen start --!>
+
+
+<button onclick="openFullscreen();">Open Fullscreen</button>
+<style>
+.hidden {
+visibility: hidden;
+}
+</style>
+
+<button onclick="closeFullscreen();">Close Fullscreen</button>
+
+<script>
+var elem = document.documentElement;
+function openFullscreen() {
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  } else if (elem.webkitRequestFullscreen) { /* Safari */
+    elem.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) { /* IE11 */
+    elem.msRequestFullscreen();
+  }
+}
+
+function closeFullscreen() {
+  if (document.exitFullscreen) {
+    document.exitFullscreen();
+  } else if (document.webkitExitFullscreen) { /* Safari */
+    document.webkitExitFullscreen();
+  } else if (document.msExitFullscreen) { /* IE11 */
+    document.msExitFullscreen();
+  }
+}
+</script>
+
+<!--fullscreen end --!>
+
+<section>
+
+
+
+ <table>
+
+<tr>
+
+		<td>
+			<img id="Fire 1" src="C:\Users\Vikki\Desktop\Detail\Images\Fire 1.png" alt Fire 1 image>
+		</td>
+
+		<td>
+			<img id = "Fire 2" src="C:\Users\Vikki\Desktop\Detail\Images\Fire 2.png" alt Fire 2 image>
+		</td>
+
+		<td>
+			<img id = "Fire 3" src="C:\Users\Vikki\Desktop\Detail\Images\Fire 3.png" alt Fire 3 image>
+		</td>
+	</tr>
+
+	<tr>
+
+		<th>Fire 1</th>
+		<th>Fire 2</th>
+		<th>Fire 3</th>
+		<th>Fire 4</th>
+	</tr>
+
+<tr>
+
+		<th>
+
+<select name="Role" id="Role">
+
+<option value="Station Commander">Station Commander</option>
+<option value="Watch Commander">Watch Commander</option>
+<option value="Crew Commander">Crew Commander</option>
+<option value="Driver">Driver</option>
+<option value="Pump operator">Pump operator</option>
+<option value="Watchroom">Watchroom</option>
+<option value="Crew">Crew</option>
+
+		</th>	
+
+
+		<th>
+
+<select name="Role" id="Role">
+
+<option value="Station Commander">Station Commander</option>
+<option value="Watch Commander">Watch Commander</option>
+<option value="Crew Commander">Crew Commander</option>
+<option value="Driver">Driver</option>
+<option value="Pump operator">Pump operator</option>
+<option value="Watchroom">Watchroom</option>
+<option value="Crew">Crew</option>
+
+		</th>	
+
+	<th>
+
+<select name="Role" id="Role">
+
+<option value="Station Commander">Station Commander</option>
+<option value="Watch Commander">Watch Commander</option>
+<option value="Crew Commander">Crew Commander</option>
+<option value="Driver">Driver</option>
+<option value="Pump operator">Pump operator</option>
+<option value="Watchroom">Watchroom</option>
+<option value="Crew">Crew</option>
+
+		</th>	
+	<th>
+
+<select name="Role" id="Role">
+
+<option value="Station Commander">Station Commander</option>
+<option value="Watch Commander">Watch Commander</option>
+<option value="Crew Commander">Crew Commander</option>
+<option value="Driver">Driver</option>
+<option value="Pump operator">Pump operator</option>
+<option value="Watchroom">Watchroom</option>
+<option value="Crew">Crew</option>
+
+		</th>	
+</tr>
+
+<tr>
+
+		<th>
+
+<!-- OIC Fire 1 --!>
+
+<select name="Personnel" id="Personnel">
+
+
+<option value="Stn/C Hughes">Stn/C Hughes</option>
+<option value="WC Campbell">WC Campbell</option>
+<option value="WC Beale">WC Beale</option>
+<option value="CC O'Neill">CC O'Neill</option>
+<option value="FF Hunter">FF Hunter</option>
+<option value="FF McAllister">FF McAllister</option>
+<option value="FF McKelvey">FF McKelvey</option>
+<option value="FF Niblock">FF Niblock</option>
+<option value="FF Poole">FF Poole</option>
+<option value="FF Duncan">FF Duncan</option>
+<option value="FF Wisdom">FF Wisdom</option>
+    
+<option value="Stn/C Bennison">Stn/C Bennison</option>
+<option value="WC Goldring">WC Goldring</option>
+<option value="CC Larmour">CC Larmour</option>
+<option value="CC Rice">CC Rice</option>
+<option value="FF Finch">FF Finch</option>
+<option value="FF Glover">FF Glover</option>
+<option value="FF Johnston">FF Johnston</option>
+<option value="FF Largan">FF Largan</option>
+<option value="FF Leathem">FF Leathem</option>
+<option value="FF Rea">FF Rea</option>
+<option value="FF Brown">FF Brown</option>
+<option value="FF McCormick">FF McCormick</option>
+    
+<option value="Stn/C Surgeoner">Stn/C Surgeoner</option>
+<option value="WC Carmichael">WC Carmichael</option>
+<option value="CC Mercer">CC Mercer</option>
+<option value="CC Coomber">CC Coomber</option>
+<option value="ACC Cullinan">ACC Cullinan</option>
+<option value="FF Henry">FF Henry</option>
+<option value="FF Mulholland">FF Mulholland</option>
+<option value="FF McClure">FF McClure</option>
+<option value="FF Todd">FF Todd</option>
+<option value="FF Crozier">FF Crozier</option>
+<option value="FF McIntyre">FF McIntyre</option>
+
+</select>
+
+		</th>
+
+		<th>
+
+<!--OIC Fire 2 --!>
+
+<select name="Personnel" id="Personnel">
+
+
+<option value="Stn/C Hughes">Stn/C Hughes</option>
+<option value="WC Campbell">WC Campbell</option>
+<option value="WC Beale">WC Beale</option>
+<option value="CC O'Neill">CC O'Neill</option>
+<option value="FF Hunter">FF Hunter</option>
+<option value="FF McAllister">FF McAllister</option>
+<option value="FF McKelvey">FF McKelvey</option>
+<option value="FF Niblock">FF Niblock</option>
+<option value="FF Poole">FF Poole</option>
+<option value="FF Duncan">FF Duncan</option>
+<option value="FF Wisdom">FF Wisdom</option>
+    
+<option value="Stn/C Bennison">Stn/C Bennison</option>
+<option value="WC Goldring">WC Goldring</option>
+<option value="CC Larmour">CC Larmour</option>
+<option value="CC Rice">CC Rice</option>
+<option value="FF Finch">FF Finch</option>
+<option value="FF Glover">FF Glover</option>
+<option value="FF Johnston">FF Johnston</option>
+<option value="FF Largan">FF Largan</option>
+<option value="FF Leathem">FF Leathem</option>
+<option value="FF Rea">FF Rea</option>
+<option value="FF Brown">FF Brown</option>
+<option value="FF McCormick">FF McCormick</option>
+    
+<option value="Stn/C Surgeoner">Stn/C Surgeoner</option>
+<option value="WC Carmichael">WC Carmichael</option>
+<option value="CC Mercer">CC Mercer</option>
+<option value="CC Coomber">CC Coomber</option>
+<option value="ACC Cullinan">ACC Cullinan</option>
+<option value="FF Henry">FF Henry</option>
+<option value="FF Mulholland">FF Mulholland</option>
+<option value="FF McClure">FF McClure</option>
+<option value="FF Todd">FF Todd</option>
+<option value="FF Crozier">FF Crozier</option>
+<option value="FF McIntyre">FF McIntyre</option>
+
+</select>
+		</th>
+
+		<th>
+<!--OIC Fire 3 --!>
+
+<select name="Personnel" id="Personnel">
+
+
+<option value="Stn/C Hughes">Stn/C Hughes</option>
+<option value="WC Campbell">WC Campbell</option>
+<option value="WC Beale">WC Beale</option>
+<option value="CC O'Neill">CC O'Neill</option>
+<option value="FF Hunter">FF Hunter</option>
+<option value="FF McAllister">FF McAllister</option>
+<option value="FF McKelvey">FF McKelvey</option>
+<option value="FF Niblock">FF Niblock</option>
+<option value="FF Poole">FF Poole</option>
+<option value="FF Duncan">FF Duncan</option>
+<option value="FF Wisdom">FF Wisdom</option>
+    
+<option value="Stn/C Bennison">Stn/C Bennison</option>
+<option value="WC Goldring">WC Goldring</option>
+<option value="CC Larmour">CC Larmour</option>
+<option value="CC Rice">CC Rice</option>
+<option value="FF Finch">FF Finch</option>
+<option value="FF Glover">FF Glover</option>
+<option value="FF Johnston">FF Johnston</option>
+<option value="FF Largan">FF Largan</option>
+<option value="FF Leathem">FF Leathem</option>
+<option value="FF Rea">FF Rea</option>
+<option value="FF Brown">FF Brown</option>
+<option value="FF McCormick">FF McCormick</option>
+    
+<option value="Stn/C Surgeoner">Stn/C Surgeoner</option>
+<option value="WC Carmichael">WC Carmichael</option>
+<option value="CC Mercer">CC Mercer</option>
+<option value="CC Coomber">CC Coomber</option>
+<option value="ACC Cullinan">ACC Cullinan</option>
+<option value="FF Henry">FF Henry</option>
+<option value="FF Mulholland">FF Mulholland</option>
+<option value="FF McClure">FF McClure</option>
+<option value="FF Todd">FF Todd</option>
+<option value="FF Crozier">FF Crozier</option>
+<option value="FF McIntyre">FF McIntyre</option>
+
+</select>
+		</th>
+
+		<th>
+<!--OIC Fire 4 --!>
+
+<select name="Personnel" id="Personnel">
+
+
+<option value="Stn/C Hughes">Stn/C Hughes</option>
+<option value="WC Campbell">WC Campbell</option>
+<option value="WC Beale">WC Beale</option>
+<option value="CC O'Neill">CC O'Neill</option>
+<option value="FF Hunter">FF Hunter</option>
+<option value="FF McAllister">FF McAllister</option>
+<option value="FF McKelvey">FF McKelvey</option>
+<option value="FF Niblock">FF Niblock</option>
+<option value="FF Poole">FF Poole</option>
+<option value="FF Duncan">FF Duncan</option>
+<option value="FF Wisdom">FF Wisdom</option>
+    
+<option value="Stn/C Bennison">Stn/C Bennison</option>
+<option value="WC Goldring">WC Goldring</option>
+<option value="CC Larmour">CC Larmour</option>
+<option value="CC Rice">CC Rice</option>
+<option value="FF Finch">FF Finch</option>
+<option value="FF Glover">FF Glover</option>
+<option value="FF Johnston">FF Johnston</option>
+<option value="FF Largan">FF Largan</option>
+<option value="FF Leathem">FF Leathem</option>
+<option value="FF Rea">FF Rea</option>
+<option value="FF Brown">FF Brown</option>
+<option value="FF McCormick">FF McCormick</option>
+    
+<option value="Stn/C Surgeoner">Stn/C Surgeoner</option>
+<option value="WC Carmichael">WC Carmichael</option>
+<option value="CC Mercer">CC Mercer</option>
+<option value="CC Coomber">CC Coomber</option>
+<option value="ACC Cullinan">ACC Cullinan</option>
+<option value="FF Henry">FF Henry</option>
+<option value="FF Mulholland">FF Mulholland</option>
+<option value="FF McClure">FF McClure</option>
+<option value="FF Todd">FF Todd</option>
+<option value="FF Crozier">FF Crozier</option>
+<option value="FF McIntyre">FF McIntyre</option>
+
+</select>
+		</th>
+<tr>
+
+		<th>
+
+<select name="Role" id="Role">
+<option value=""></option>
+<option value="Station Commander">Station Commander</option>
+<option value="Watch Commander">Watch Commander</option>
+<option value="Crew Commander">Crew Commander</option>
+<option value="Driver">Driver</option>
+<option value="Pump operator">Pump operator</option>
+<option value="Watchroom">Watchroom</option>
+<option value="Crew">Crew</option>
+
+		</th>	
+
+
+		<th>
+
+<select name="Role" id="Role">
+<option value=""></option>
+<option value="Station Commander">Station Commander</option>
+<option value="Watch Commander">Watch Commander</option>
+<option value="Crew Commander">Crew Commander</option>
+<option value="Driver">Driver</option>
+<option value="Pump operator">Pump operator</option>
+<option value="Watchroom">Watchroom</option>
+<option value="Crew">Crew</option>
+
+		</th>	
+
+	<th>
+
+<select name="Role" id="Role">
+<option value=""></option>
+<option value="Station Commander">Station Commander</option>
+<option value="Watch Commander">Watch Commander</option>
+<option value="Crew Commander">Crew Commander</option>
+<option value="Driver">Driver</option>
+<option value="Pump operator">Pump operator</option>
+<option value="Watchroom">Watchroom</option>
+<option value="Crew">Crew</option>
+
+		</th>	
+	<th>
+
+<select name="Role" id="Role">
+<option value=""></option>
+<option value="Station Commander">Station Commander</option>
+<option value="Watch Commander">Watch Commander</option>
+<option value="Crew Commander">Crew Commander</option>
+<option value="Driver">Driver</option>
+<option value="Pump operator">Pump operator</option>
+<option value="Watchroom">Watchroom</option>
+<option value="Crew">Crew</option>
+
+		</th>	
+</tr>
+<tr>
+
+		<th>
+<!--Driver Fire 1 --!>
+
+<select name="Personnel" id="Personnel">
+
+<option value=""></option>
+<option value="Stn/C Hughes">Stn/C Hughes</option>
+<option value="WC Campbell">WC Campbell</option>
+<option value="WC Beale">WC Beale</option>
+<option value="CC O'Neill">CC O'Neill</option>
+<option value="FF Hunter">FF Hunter</option>
+<option value="FF McAllister">FF McAllister</option>
+<option value="FF McKelvey">FF McKelvey</option>
+<option value="FF Niblock">FF Niblock</option>
+<option value="FF Poole">FF Poole</option>
+<option value="FF Duncan">FF Duncan</option>
+<option value="FF Wisdom">FF Wisdom</option>
+    
+<option value="Stn/C Bennison">Stn/C Bennison</option>
+<option value="WC Goldring">WC Goldring</option>
+<option value="CC Larmour">CC Larmour</option>
+<option value="CC Rice">CC Rice</option>
+<option value="FF Finch">FF Finch</option>
+<option value="FF Glover">FF Glover</option>
+<option value="FF Johnston">FF Johnston</option>
+<option value="FF Largan">FF Largan</option>
+<option value="FF Leathem">FF Leathem</option>
+<option value="FF Rea">FF Rea</option>
+<option value="FF Brown">FF Brown</option>
+<option value="FF McCormick">FF McCormick</option>
+    
+<option value="Stn/C Surgeoner">Stn/C Surgeoner</option>
+<option value="WC Carmichael">WC Carmichael</option>
+<option value="CC Mercer">CC Mercer</option>
+<option value="CC Coomber">CC Coomber</option>
+<option value="ACC Cullinan">ACC Cullinan</option>
+<option value="FF Henry">FF Henry</option>
+<option value="FF Mulholland">FF Mulholland</option>
+<option value="FF McClure">FF McClure</option>
+<option value="FF Todd">FF Todd</option>
+<option value="FF Crozier">FF Crozier</option>
+<option value="FF McIntyre">FF McIntyre</option>
+
+</select>
+
+		</th>
+
+		<th>
+<!--Driver Fire 2 --!>
+
+<select name="Personnel" id="Personnel">
+
+<option value=""></option>
+<option value="Stn/C Hughes">Stn/C Hughes</option>
+<option value="WC Campbell">WC Campbell</option>
+<option value="WC Beale">WC Beale</option>
+<option value="CC O'Neill">CC O'Neill</option>
+<option value="FF Hunter">FF Hunter</option>
+<option value="FF McAllister">FF McAllister</option>
+<option value="FF McKelvey">FF McKelvey</option>
+<option value="FF Niblock">FF Niblock</option>
+<option value="FF Poole">FF Poole</option>
+<option value="FF Duncan">FF Duncan</option>
+<option value="FF Wisdom">FF Wisdom</option>
+    
+<option value="Stn/C Bennison">Stn/C Bennison</option>
+<option value="WC Goldring">WC Goldring</option>
+<option value="CC Larmour">CC Larmour</option>
+<option value="CC Rice">CC Rice</option>
+<option value="FF Finch">FF Finch</option>
+<option value="FF Glover">FF Glover</option>
+<option value="FF Johnston">FF Johnston</option>
+<option value="FF Largan">FF Largan</option>
+<option value="FF Leathem">FF Leathem</option>
+<option value="FF Rea">FF Rea</option>
+<option value="FF Brown">FF Brown</option>
+<option value="FF McCormick">FF McCormick</option>
+    
+<option value="Stn/C Surgeoner">Stn/C Surgeoner</option>
+<option value="WC Carmichael">WC Carmichael</option>
+<option value="CC Mercer">CC Mercer</option>
+<option value="CC Coomber">CC Coomber</option>
+<option value="ACC Cullinan">ACC Cullinan</option>
+<option value="FF Henry">FF Henry</option>
+<option value="FF Mulholland">FF Mulholland</option>
+<option value="FF McClure">FF McClure</option>
+<option value="FF Todd">FF Todd</option>
+<option value="FF Crozier">FF Crozier</option>
+<option value="FF McIntyre">FF McIntyre</option>
+
+</select>
+		</th>
+
+		<th>
+
+<!--Driver Fire 3 --!>
+
+<select name="Personnel" id="Personnel">
+
+<option value=""></option>
+<option value="Stn/C Hughes">Stn/C Hughes</option>
+<option value="WC Campbell">WC Campbell</option>
+<option value="WC Beale">WC Beale</option>
+<option value="CC O'Neill">CC O'Neill</option>
+<option value="FF Hunter">FF Hunter</option>
+<option value="FF McAllister">FF McAllister</option>
+<option value="FF McKelvey">FF McKelvey</option>
+<option value="FF Niblock">FF Niblock</option>
+<option value="FF Poole">FF Poole</option>
+<option value="FF Duncan">FF Duncan</option>
+<option value="FF Wisdom">FF Wisdom</option>
+    
+<option value="Stn/C Bennison">Stn/C Bennison</option>
+<option value="WC Goldring">WC Goldring</option>
+<option value="CC Larmour">CC Larmour</option>
+<option value="CC Rice">CC Rice</option>
+<option value="FF Finch">FF Finch</option>
+<option value="FF Glover">FF Glover</option>
+<option value="FF Johnston">FF Johnston</option>
+<option value="FF Largan">FF Largan</option>
+<option value="FF Leathem">FF Leathem</option>
+<option value="FF Rea">FF Rea</option>
+<option value="FF Brown">FF Brown</option>
+<option value="FF McCormick">FF McCormick</option>
+    
+<option value="Stn/C Surgeoner">Stn/C Surgeoner</option>
+<option value="WC Carmichael">WC Carmichael</option>
+<option value="CC Mercer">CC Mercer</option>
+<option value="CC Coomber">CC Coomber</option>
+<option value="ACC Cullinan">ACC Cullinan</option>
+<option value="FF Henry">FF Henry</option>
+<option value="FF Mulholland">FF Mulholland</option>
+<option value="FF McClure">FF McClure</option>
+<option value="FF Todd">FF Todd</option>
+<option value="FF Crozier">FF Crozier</option>
+<option value="FF McIntyre">FF McIntyre</option>
+
+</select>
+		</th>
+
+		<th>
+<!--Driver Fire 4 --!>
+
+<select name="Personnel" id="Personnel">
+
+<option value=""></option>
+<option value="Stn/C Hughes">Stn/C Hughes</option>
+<option value="WC Campbell">WC Campbell</option>
+<option value="WC Beale">WC Beale</option>
+<option value="CC O'Neill">CC O'Neill</option>
+<option value="FF Hunter">FF Hunter</option>
+<option value="FF McAllister">FF McAllister</option>
+<option value="FF McKelvey">FF McKelvey</option>
+<option value="FF Niblock">FF Niblock</option>
+<option value="FF Poole">FF Poole</option>
+<option value="FF Duncan">FF Duncan</option>
+<option value="FF Wisdom">FF Wisdom</option>
+    
+<option value="Stn/C Bennison">Stn/C Bennison</option>
+<option value="WC Goldring">WC Goldring</option>
+<option value="CC Larmour">CC Larmour</option>
+<option value="CC Rice">CC Rice</option>
+<option value="FF Finch">FF Finch</option>
+<option value="FF Glover">FF Glover</option>
+<option value="FF Johnston">FF Johnston</option>
+<option value="FF Largan">FF Largan</option>
+<option value="FF Leathem">FF Leathem</option>
+<option value="FF Rea">FF Rea</option>
+<option value="FF Brown">FF Brown</option>
+<option value="FF McCormick">FF McCormick</option>
+    
+<option value="Stn/C Surgeoner">Stn/C Surgeoner</option>
+<option value="WC Carmichael">WC Carmichael</option>
+<option value="CC Mercer">CC Mercer</option>
+<option value="CC Coomber">CC Coomber</option>
+<option value="ACC Cullinan">ACC Cullinan</option>
+<option value="FF Henry">FF Henry</option>
+<option value="FF Mulholland">FF Mulholland</option>
+<option value="FF McClure">FF McClure</option>
+<option value="FF Todd">FF Todd</option>
+<option value="FF Crozier">FF Crozier</option>
+<option value="FF McIntyre">FF McIntyre</option>
+
+</select>
+		</th>
+
+</tr>
+<tr>
+
+		<th>
+
+<select name="Role" id="Role">
+<option value=""></option>
+<option value="Station Commander">Station Commander</option>
+<option value="Watch Commander">Watch Commander</option>
+<option value="Crew Commander">Crew Commander</option>
+<option value="Driver">Driver</option>
+<option value="Pump operator">Pump operator</option>
+<option value="Watchroom">Watchroom</option>
+<option value="Crew">Crew</option>
+
+		</th>	
+
+
+		<th>
+
+<select name="Role" id="Role">
+<option value=""></option>
+<option value="Station Commander">Station Commander</option>
+<option value="Watch Commander">Watch Commander</option>
+<option value="Crew Commander">Crew Commander</option>
+<option value="Driver">Driver</option>
+<option value="Pump operator">Pump operator</option>
+<option value="Watchroom">Watchroom</option>
+<option value="Crew">Crew</option>
+
+		</th>	
+
+	<th>
+
+<select name="Role" id="Role">
+<option value=""></option>
+<option value="Station Commander">Station Commander</option>
+<option value="Watch Commander">Watch Commander</option>
+<option value="Crew Commander">Crew Commander</option>
+<option value="Driver">Driver</option>
+<option value="Pump operator">Pump operator</option>
+<option value="Watchroom">Watchroom</option>
+<option value="Crew">Crew</option>
+
+		</th>	
+	<th>
+
+<select name="Role" id="Role">
+<option value=""></option>
+<option value="Station Commander">Station Commander</option>
+<option value="Watch Commander">Watch Commander</option>
+<option value="Crew Commander">Crew Commander</option>
+<option value="Driver">Driver</option>
+<option value="Pump operator">Pump operator</option>
+<option value="Watchroom">Watchroom</option>
+<option value="Crew">Crew</option>
+
+		</th>	
+</tr>
+	<tr>
+
+		<th>
+
+<!-- 3rd Fire 1 --!>
+
+<select name="Personnel" id="Personnel">
+
+<option value=""></option>
+<option value="Stn/C Hughes">Stn/C Hughes</option>
+<option value="WC Campbell">WC Campbell</option>
+<option value="WC Beale">WC Beale</option>
+<option value="CC O'Neill">CC O'Neill</option>
+<option value="FF Hunter">FF Hunter</option>
+<option value="FF McAllister">FF McAllister</option>
+<option value="FF McKelvey">FF McKelvey</option>
+<option value="FF Niblock">FF Niblock</option>
+<option value="FF Poole">FF Poole</option>
+<option value="FF Duncan">FF Duncan</option>
+<option value="FF Wisdom">FF Wisdom</option>
+    
+<option value="Stn/C Bennison">Stn/C Bennison</option>
+<option value="WC Goldring">WC Goldring</option>
+<option value="CC Larmour">CC Larmour</option>
+<option value="CC Rice">CC Rice</option>
+<option value="FF Finch">FF Finch</option>
+<option value="FF Glover">FF Glover</option>
+<option value="FF Johnston">FF Johnston</option>
+<option value="FF Largan">FF Largan</option>
+<option value="FF Leathem">FF Leathem</option>
+<option value="FF Rea">FF Rea</option>
+<option value="FF Brown">FF Brown</option>
+<option value="FF McCormick">FF McCormick</option>
+    
+<option value="Stn/C Surgeoner">Stn/C Surgeoner</option>
+<option value="WC Carmichael">WC Carmichael</option>
+<option value="CC Mercer">CC Mercer</option>
+<option value="CC Coomber">CC Coomber</option>
+<option value="ACC Cullinan">ACC Cullinan</option>
+<option value="FF Henry">FF Henry</option>
+<option value="FF Mulholland">FF Mulholland</option>
+<option value="FF McClure">FF McClure</option>
+<option value="FF Todd">FF Todd</option>
+<option value="FF Crozier">FF Crozier</option>
+<option value="FF McIntyre">FF McIntyre</option>
+
+</select>
+
+		</th>
+
+		<th>
+
+<!--3rd Fire 2 --!>
+
+<select name="Personnel" id="Personnel">
+
+<option value=""></option>
+<option value="Stn/C Hughes">Stn/C Hughes</option>
+<option value="WC Campbell">WC Campbell</option>
+<option value="WC Beale">WC Beale</option>
+<option value="CC O'Neill">CC O'Neill</option>
+<option value="FF Hunter">FF Hunter</option>
+<option value="FF McAllister">FF McAllister</option>
+<option value="FF McKelvey">FF McKelvey</option>
+<option value="FF Niblock">FF Niblock</option>
+<option value="FF Poole">FF Poole</option>
+<option value="FF Duncan">FF Duncan</option>
+<option value="FF Wisdom">FF Wisdom</option>
+    
+<option value="Stn/C Bennison">Stn/C Bennison</option>
+<option value="WC Goldring">WC Goldring</option>
+<option value="CC Larmour">CC Larmour</option>
+<option value="CC Rice">CC Rice</option>
+<option value="FF Finch">FF Finch</option>
+<option value="FF Glover">FF Glover</option>
+<option value="FF Johnston">FF Johnston</option>
+<option value="FF Largan">FF Largan</option>
+<option value="FF Leathem">FF Leathem</option>
+<option value="FF Rea">FF Rea</option>
+<option value="FF Brown">FF Brown</option>
+<option value="FF McCormick">FF McCormick</option>
+    
+<option value="Stn/C Surgeoner">Stn/C Surgeoner</option>
+<option value="WC Carmichael">WC Carmichael</option>
+<option value="CC Mercer">CC Mercer</option>
+<option value="CC Coomber">CC Coomber</option>
+<option value="ACC Cullinan">ACC Cullinan</option>
+<option value="FF Henry">FF Henry</option>
+<option value="FF Mulholland">FF Mulholland</option>
+<option value="FF McClure">FF McClure</option>
+<option value="FF Todd">FF Todd</option>
+<option value="FF Crozier">FF Crozier</option>
+<option value="FF McIntyre">FF McIntyre</option>
+
+</select>
+		</th>
+
+		<th>
+<!--3rd Fire 3 --!>
+
+<select name="Personnel" id="Personnel">
+
+<option value=""></option>
+<option value="Stn/C Hughes">Stn/C Hughes</option>
+<option value="WC Campbell">WC Campbell</option>
+<option value="WC Beale">WC Beale</option>
+<option value="CC O'Neill">CC O'Neill</option>
+<option value="FF Hunter">FF Hunter</option>
+<option value="FF McAllister">FF McAllister</option>
+<option value="FF McKelvey">FF McKelvey</option>
+<option value="FF Niblock">FF Niblock</option>
+<option value="FF Poole">FF Poole</option>
+<option value="FF Duncan">FF Duncan</option>
+<option value="FF Wisdom">FF Wisdom</option>
+    
+<option value="Stn/C Bennison">Stn/C Bennison</option>
+<option value="WC Goldring">WC Goldring</option>
+<option value="CC Larmour">CC Larmour</option>
+<option value="CC Rice">CC Rice</option>
+<option value="FF Finch">FF Finch</option>
+<option value="FF Glover">FF Glover</option>
+<option value="FF Johnston">FF Johnston</option>
+<option value="FF Largan">FF Largan</option>
+<option value="FF Leathem">FF Leathem</option>
+<option value="FF Rea">FF Rea</option>
+<option value="FF Brown">FF Brown</option>
+<option value="FF McCormick">FF McCormick</option>
+    
+<option value="Stn/C Surgeoner">Stn/C Surgeoner</option>
+<option value="WC Carmichael">WC Carmichael</option>
+<option value="CC Mercer">CC Mercer</option>
+<option value="CC Coomber">CC Coomber</option>
+<option value="ACC Cullinan">ACC Cullinan</option>
+<option value="FF Henry">FF Henry</option>
+<option value="FF Mulholland">FF Mulholland</option>
+<option value="FF McClure">FF McClure</option>
+<option value="FF Todd">FF Todd</option>
+<option value="FF Crozier">FF Crozier</option>
+<option value="FF McIntyre">FF McIntyre</option>
+
+</select>
+		</th>
+
+		<th>
+<!--3rd Fire 4 --!>
+
+<select name="Personnel" id="Personnel">
+
+<option value=""></option>
+<option value="Stn/C Hughes">Stn/C Hughes</option>
+<option value="WC Campbell">WC Campbell</option>
+<option value="WC Beale">WC Beale</option>
+<option value="CC O'Neill">CC O'Neill</option>
+<option value="FF Hunter">FF Hunter</option>
+<option value="FF McAllister">FF McAllister</option>
+<option value="FF McKelvey">FF McKelvey</option>
+<option value="FF Niblock">FF Niblock</option>
+<option value="FF Poole">FF Poole</option>
+<option value="FF Duncan">FF Duncan</option>
+<option value="FF Wisdom">FF Wisdom</option>
+    
+<option value="Stn/C Bennison">Stn/C Bennison</option>
+<option value="WC Goldring">WC Goldring</option>
+<option value="CC Larmour">CC Larmour</option>
+<option value="CC Rice">CC Rice</option>
+<option value="FF Finch">FF Finch</option>
+<option value="FF Glover">FF Glover</option>
+<option value="FF Johnston">FF Johnston</option>
+<option value="FF Largan">FF Largan</option>
+<option value="FF Leathem">FF Leathem</option>
+<option value="FF Rea">FF Rea</option>
+<option value="FF Brown">FF Brown</option>
+<option value="FF McCormick">FF McCormick</option>
+    
+<option value="Stn/C Surgeoner">Stn/C Surgeoner</option>
+<option value="WC Carmichael">WC Carmichael</option>
+<option value="CC Mercer">CC Mercer</option>
+<option value="CC Coomber">CC Coomber</option>
+<option value="ACC Cullinan">ACC Cullinan</option>
+<option value="FF Henry">FF Henry</option>
+<option value="FF Mulholland">FF Mulholland</option>
+<option value="FF McClure">FF McClure</option>
+<option value="FF Todd">FF Todd</option>
+<option value="FF Crozier">FF Crozier</option>
+<option value="FF McIntyre">FF McIntyre</option>
+
+</select>
+		</th>
+
+</tr>
+<tr>
+
+		<th>
+
+<select name="Role" id="Role">
+<option value=""></option>
+<option value="Station Commander">Station Commander</option>
+<option value="Watch Commander">Watch Commander</option>
+<option value="Crew Commander">Crew Commander</option>
+<option value="Driver">Driver</option>
+<option value="Pump operator">Pump operator</option>
+<option value="Watchroom">Watchroom</option>
+<option value="Crew">Crew</option>
+
+		</th>	
+
+
+		<th>
+
+<select name="Role" id="Role">
+<option value=""></option>
+<option value="Station Commander">Station Commander</option>
+<option value="Watch Commander">Watch Commander</option>
+<option value="Crew Commander">Crew Commander</option>
+<option value="Driver">Driver</option>
+<option value="Pump operator">Pump operator</option>
+<option value="Watchroom">Watchroom</option>
+<option value="Crew">Crew</option>
+
+		</th>	
+
+	<th>
+
+<select name="Role" id="Role">
+<option value=""></option>
+<option value="Station Commander">Station Commander</option>
+<option value="Watch Commander">Watch Commander</option>
+<option value="Crew Commander">Crew Commander</option>
+<option value="Driver">Driver</option>
+<option value="Pump operator">Pump operator</option>
+<option value="Watchroom">Watchroom</option>
+<option value="Crew">Crew</option>
+
+		</th>	
+	<th>
+
+<select name="Role" id="Role">
+<option value=""></option>
+<option value="Station Commander">Station Commander</option>
+<option value="Watch Commander">Watch Commander</option>
+<option value="Crew Commander">Crew Commander</option>
+<option value="Driver">Driver</option>
+<option value="Pump operator">Pump operator</option>
+<option value="Watchroom">Watchroom</option>
+<option value="Crew">Crew</option>
+
+		</th>	
+</tr>
+
+	<tr>
+
+		<th>
+
+<!-- 4th Fire 1 --!>
+
+<select name="Personnel" id="Personnel">
+
+<option value=""></option>
+<option value="Stn/C Hughes">Stn/C Hughes</option>
+<option value="WC Campbell">WC Campbell</option>
+<option value="WC Beale">WC Beale</option>
+<option value="CC O'Neill">CC O'Neill</option>
+<option value="FF Hunter">FF Hunter</option>
+<option value="FF McAllister">FF McAllister</option>
+<option value="FF McKelvey">FF McKelvey</option>
+<option value="FF Niblock">FF Niblock</option>
+<option value="FF Poole">FF Poole</option>
+<option value="FF Duncan">FF Duncan</option>
+<option value="FF Wisdom">FF Wisdom</option>
+    
+<option value="Stn/C Bennison">Stn/C Bennison</option>
+<option value="WC Goldring">WC Goldring</option>
+<option value="CC Larmour">CC Larmour</option>
+<option value="CC Rice">CC Rice</option>
+<option value="FF Finch">FF Finch</option>
+<option value="FF Glover">FF Glover</option>
+<option value="FF Johnston">FF Johnston</option>
+<option value="FF Largan">FF Largan</option>
+<option value="FF Leathem">FF Leathem</option>
+<option value="FF Rea">FF Rea</option>
+<option value="FF Brown">FF Brown</option>
+<option value="FF McCormick">FF McCormick</option>
+    
+<option value="Stn/C Surgeoner">Stn/C Surgeoner</option>
+<option value="WC Carmichael">WC Carmichael</option>
+<option value="CC Mercer">CC Mercer</option>
+<option value="CC Coomber">CC Coomber</option>
+<option value="ACC Cullinan">ACC Cullinan</option>
+<option value="FF Henry">FF Henry</option>
+<option value="FF Mulholland">FF Mulholland</option>
+<option value="FF McClure">FF McClure</option>
+<option value="FF Todd">FF Todd</option>
+<option value="FF Crozier">FF Crozier</option>
+<option value="FF McIntyre">FF McIntyre</option>
+
+</select>
+
+		</th>
+
+		<th>
+
+<!--4th Fire 2 --!>
+
+<select name="Personnel" id="Personnel">
+
+<option value=""></option>
+<option value="Stn/C Hughes">Stn/C Hughes</option>
+<option value="WC Campbell">WC Campbell</option>
+<option value="WC Beale">WC Beale</option>
+<option value="CC O'Neill">CC O'Neill</option>
+<option value="FF Hunter">FF Hunter</option>
+<option value="FF McAllister">FF McAllister</option>
+<option value="FF McKelvey">FF McKelvey</option>
+<option value="FF Niblock">FF Niblock</option>
+<option value="FF Poole">FF Poole</option>
+<option value="FF Duncan">FF Duncan</option>
+<option value="FF Wisdom">FF Wisdom</option>
+    
+<option value="Stn/C Bennison">Stn/C Bennison</option>
+<option value="WC Goldring">WC Goldring</option>
+<option value="CC Larmour">CC Larmour</option>
+<option value="CC Rice">CC Rice</option>
+<option value="FF Finch">FF Finch</option>
+<option value="FF Glover">FF Glover</option>
+<option value="FF Johnston">FF Johnston</option>
+<option value="FF Largan">FF Largan</option>
+<option value="FF Leathem">FF Leathem</option>
+<option value="FF Rea">FF Rea</option>
+<option value="FF Brown">FF Brown</option>
+<option value="FF McCormick">FF McCormick</option>
+    
+<option value="Stn/C Surgeoner">Stn/C Surgeoner</option>
+<option value="WC Carmichael">WC Carmichael</option>
+<option value="CC Mercer">CC Mercer</option>
+<option value="CC Coomber">CC Coomber</option>
+<option value="ACC Cullinan">ACC Cullinan</option>
+<option value="FF Henry">FF Henry</option>
+<option value="FF Mulholland">FF Mulholland</option>
+<option value="FF McClure">FF McClure</option>
+<option value="FF Todd">FF Todd</option>
+<option value="FF Crozier">FF Crozier</option>
+<option value="FF McIntyre">FF McIntyre</option>
+
+</select>
+		</th>
+
+		<th>
+<!--4th Fire 3 --!>
+
+<select name="Personnel" id="Personnel">
+
+<option value=""></option>
+<option value="Stn/C Hughes">Stn/C Hughes</option>
+<option value="WC Campbell">WC Campbell</option>
+<option value="WC Beale">WC Beale</option>
+<option value="CC O'Neill">CC O'Neill</option>
+<option value="FF Hunter">FF Hunter</option>
+<option value="FF McAllister">FF McAllister</option>
+<option value="FF McKelvey">FF McKelvey</option>
+<option value="FF Niblock">FF Niblock</option>
+<option value="FF Poole">FF Poole</option>
+<option value="FF Duncan">FF Duncan</option>
+<option value="FF Wisdom">FF Wisdom</option>
+    
+<option value="Stn/C Bennison">Stn/C Bennison</option>
+<option value="WC Goldring">WC Goldring</option>
+<option value="CC Larmour">CC Larmour</option>
+<option value="CC Rice">CC Rice</option>
+<option value="FF Finch">FF Finch</option>
+<option value="FF Glover">FF Glover</option>
+<option value="FF Johnston">FF Johnston</option>
+<option value="FF Largan">FF Largan</option>
+<option value="FF Leathem">FF Leathem</option>
+<option value="FF Rea">FF Rea</option>
+<option value="FF Brown">FF Brown</option>
+<option value="FF McCormick">FF McCormick</option>
+    
+<option value="Stn/C Surgeoner">Stn/C Surgeoner</option>
+<option value="WC Carmichael">WC Carmichael</option>
+<option value="CC Mercer">CC Mercer</option>
+<option value="CC Coomber">CC Coomber</option>
+<option value="ACC Cullinan">ACC Cullinan</option>
+<option value="FF Henry">FF Henry</option>
+<option value="FF Mulholland">FF Mulholland</option>
+<option value="FF McClure">FF McClure</option>
+<option value="FF Todd">FF Todd</option>
+<option value="FF Crozier">FF Crozier</option>
+<option value="FF McIntyre">FF McIntyre</option>
+
+</select>
+		</th>
+
+		<th>
+<!--4th Fire 4 --!>
+
+<select name="Personnel" id="Personnel">
+
+<option value=""></option>
+<option value="Stn/C Hughes">Stn/C Hughes</option>
+<option value="WC Campbell">WC Campbell</option>
+<option value="WC Beale">WC Beale</option>
+<option value="CC O'Neill">CC O'Neill</option>
+<option value="FF Hunter">FF Hunter</option>
+<option value="FF McAllister">FF McAllister</option>
+<option value="FF McKelvey">FF McKelvey</option>
+<option value="FF Niblock">FF Niblock</option>
+<option value="FF Poole">FF Poole</option>
+<option value="FF Duncan">FF Duncan</option>
+<option value="FF Wisdom">FF Wisdom</option>
+    
+<option value="Stn/C Bennison">Stn/C Bennison</option>
+<option value="WC Goldring">WC Goldring</option>
+<option value="CC Larmour">CC Larmour</option>
+<option value="CC Rice">CC Rice</option>
+<option value="FF Finch">FF Finch</option>
+<option value="FF Glover">FF Glover</option>
+<option value="FF Johnston">FF Johnston</option>
+<option value="FF Largan">FF Largan</option>
+<option value="FF Leathem">FF Leathem</option>
+<option value="FF Rea">FF Rea</option>
+<option value="FF Brown">FF Brown</option>
+<option value="FF McCormick">FF McCormick</option>
+    
+<option value="Stn/C Surgeoner">Stn/C Surgeoner</option>
+<option value="WC Carmichael">WC Carmichael</option>
+<option value="CC Mercer">CC Mercer</option>
+<option value="CC Coomber">CC Coomber</option>
+<option value="ACC Cullinan">ACC Cullinan</option>
+<option value="FF Henry">FF Henry</option>
+<option value="FF Mulholland">FF Mulholland</option>
+<option value="FF McClure">FF McClure</option>
+<option value="FF Todd">FF Todd</option>
+<option value="FF Crozier">FF Crozier</option>
+<option value="FF McIntyre">FF McIntyre</option>
+
+</select>
+		</th>
+</tr>
+</table>
+
+</section>
+
+</body>
+
+</html>
+
+
+  <body>
+    
+   
+  </body>
+</html>
+
+
